@@ -252,11 +252,7 @@ begin
 endmodule
  
 ////////////////////////////////////////////////////////////
- 
- 
- 
- 
-//////////////////
+
 module top(
     input wr,clk,rst,
     input [7:0] addr, din,
@@ -269,13 +265,6 @@ spi_intf intf (wr, clk, rst, readyreg, opdonereg, addr, din, dout, csreg, mosire
 spi_mem  mem_inst (clk, rst, csreg, mosireg, readyreg, misoreg, opdonereg);
  
 endmodule
- 
- 
- 
- 
- 
- 
- 
  
 //////////////////////////////////////////////
  
