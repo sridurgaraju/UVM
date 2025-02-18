@@ -11,12 +11,23 @@ This repository contains **Universal Verification Methodology (UVM) testbenches*
 ## 🚀 Tools & Technologies  
 
 - **Languages:** SystemVerilog, UVM  
-- **Tools:** Cadence Xcelium / Synopsys VCS / Mentor QuestaSim / Xilinx Vivado (any simulator that supports UVM)  
+- **Simulation Tools:** Cadence Xcelium / Synopsys VCS / Mentor QuestaSim / Xilinx Vivado (any simulator that supports UVM)  
 
 ## 📌 Future Additions  
 
 - More UVM testbenches for **memory controllers, networking protocols, and SoC peripherals**.  
-- Enhancements to existing projects with **self-checking mechanisms** and **functional coverage improvements**.  
+- Enhancements to existing projects with **self-checking mechanisms** and **functional coverage improvements**.
+
+## 🔧 Setup & Running Tests  
+
+To run any project, follow these steps:  
+
+1. **Clone the repository** or download the required **design and testbench files**:  
+   ```bash
+   git clone https://github.com/sridurgaraju/UVM.git
+   cd UVM/<project-folder>  # Navigate to the specific protocol directory
+2. Alternatively, you can manually download the design and testbench files from the respective project folder.
+3. Compile and run the testbench using your preferred simulation tool
 
 ## 📬 Contact
 For questions, reach out via:
