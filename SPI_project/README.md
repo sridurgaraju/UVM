@@ -77,8 +77,8 @@ This project is structured to work seamlessly within the **UVM environment**, so
 ---
 
 ### 📬 Contact  
-📧 Email: [your-email@example.com](mailto:your-email@example.com)  
-🔗 LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/your-linkedin/)  
+📧 Email: sridurgaraju07@gmail.com
+🔗 LinkedIn: https://www.linkedin.com/in/sri-durga-raju/ 
 
 ---
 
