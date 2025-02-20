@@ -85,12 +85,10 @@ This project is structured to work seamlessly within the **UVM environment**, so
 ---
 
 ### 📬 Contact  
-📧 Email: sridurgaraju07@gmail.com  
-🔗 LinkedIn: https://www.linkedin.com/in/sri-durga-raju/
+📧 Email: sridurgaraju07@gmail.com
+🔗 LinkedIn: https://www.linkedin.com/in/sri-durga-raju/ 
 
 ---
 
 Happy Verifying! 🚀🔬  
-
-
 
