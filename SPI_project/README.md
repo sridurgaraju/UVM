@@ -6,7 +6,7 @@ This project implements a **Universal Verification Methodology (UVM)** testbench
 
 ## 📌 **Project Overview**  
 
-### **🔹 SPI Design (`src/` Folder)**  
+### 🔹 **SPI Design**  
 
 The **SPI Master (`spi_intf.sv`)** controls SPI communication by:  
 ✔ Receiving **write (`wr`) and read** commands from the processor.  
@@ -22,11 +22,11 @@ The **Top Module (`top.sv`)** connects the **SPI Master** to **SPI Memory** for 
 
 ---
 
-### **🔹 UVM Testbench (`uvm_tb/` Folder)**  
+### 🔹 **UVM Testbench**  
 
 The UVM testbench is designed to **verify the SPI Master using a self-checking environment**. It consists of:  
 
-✔ **Testbench**  
+✔ **Testbench (`tb.sv`)**  
    - Instantiates the **SPI interface and test environment**.  
    - Calls the **test sequences** to run different verification scenarios.  
    - Reports test results and coverage metrics.  
