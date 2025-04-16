@@ -58,7 +58,6 @@ This project is structured to work seamlessly within the **UVM environment**, so
 
 ✔ **UVM Agent** – Includes **Driver, Monitor, and Sequencer** to generate I2C transactions.  
 ✔ **UVM Scoreboard** – Compares expected vs. actual data to check correctness.  
-✔ **UVM Coverage** – Measures functional coverage for I2C transactions.  
 ✔ **Randomization** – Tests multiple I2C configurations dynamically.  
 
 ---
