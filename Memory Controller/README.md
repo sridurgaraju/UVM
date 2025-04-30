@@ -133,6 +133,14 @@ These features together ensure maintainability, reusability, and thorough verifi
 
 ---
 
+## 📌 Future Enhancements  
+
+✔ Add support for **SPI Slave** verification.  
+✔ Extend testbench to include **error injection and recovery scenarios**.  
+✔ Integrate formal verification for protocol compliance.  
+
+---
+
 ## 📦 What's Included
 
 ### RTL + Interface
