@@ -96,17 +96,40 @@ Invalid addresses return a default value: `0x00000000`.
 
 This project uses a **UVM Register Abstraction Layer (RAL)** model to streamline and abstract register-level operations in the testbench.
 
-### The UVM environment includes:
-- `uvm_reg_block` for register block mapping  
-- Register models using `uvm_reg`  
-- Sequences for read/write operations  
-- **Adapter** (part of the RAL, bridges RAL model and bus transactions)  
-- Environment and Test components  
-- Driver, Monitor, Scoreboard, and Coverage components  
+### 🚀 UVM Features Used
+
+- **Register Abstraction Layer (RAL):**
+  - Abstracts memory-mapped register accesses.
+  - Simplifies CSR programming and checking.
+  - Includes `uvm_reg_block`, register models, and adapter.
+
+- **Sequence and Sequencer Architecture:**
+  - Enables modular and reusable test scenarios.
+  - Includes standard and RAL-based sequences.
+
+- **Scoreboard:**
+  - Checks functional correctness of DUT output.
+  - Compares expected vs actual data transactions.
+
+- **Monitor:**
+  - Passive component that observes bus transactions.
+  - Used for coverage and functional checking.
+
+- **Driver:**
+  - Converts sequence items into pin-level activity on the interface.
+  - Communicates with sequencer and DUT.
+
+- **Coverage Collection:**
+  - Collects functional coverage for stimulus and register access.
+  - Currently under development.
+
+- **Test and Environment Structure:**
+  - Modular `env`, `test`, and config-driven architecture.
+  - Promotes reuse across multiple testbenches or DUT variants.
+
+These features together ensure maintainability, reusability, and thorough verification of the memory controller.
 
 > 🔧 *Currently working on the coverage part of the testbench to ensure functional and register-level coverage is met.*
-
-The testbench mimics realistic memory controller use cases, verifying internal logic via CSR accesses and checking the correctness of outputs.
 
 ---
 
