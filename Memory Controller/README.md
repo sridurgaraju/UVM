@@ -8,6 +8,8 @@ The controller provides a **CSR (Control and Status Register)** interface to man
 
 Rather than interacting directly with the memory, users set values in registers — and the controller uses those values to perform operations.
 
+> 🔧 **Note:** This project is currently a work in progress. I'm in the process of developing the coverage part of the testbench
+
 ---
 
 ## 🧩 Interface Overview
