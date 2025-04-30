@@ -135,11 +135,11 @@ These features together ensure maintainability, reusability, and thorough verifi
 
 ---
 
-## 📌 Future Enhancements  
+## 🔧 **Running the Testbench**  
 
-✔ Add support for **SPI Slave** verification.  
-✔ Extend testbench to include **error injection and recovery scenarios**.  
-✔ Integrate formal verification for protocol compliance.  
+To compile and run this testbench, follow the **general simulation setup** provided in the **[UVM README](../README.md)**.  
+
+🔗 **UVM Repository Simulation Guide**: [Click here](../README.md)  
 
 ---
 
