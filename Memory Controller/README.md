@@ -135,14 +135,6 @@ These features together ensure maintainability, reusability, and thorough verifi
 
 ---
 
-## 🔧 **Running the Testbench**  
-
-To compile and run this testbench, follow the **general simulation setup** provided in the **[UVM README](../README.md)**.  
-
-🔗 **UVM Repository Simulation Guide**: [Click here](../README.md)  
-
----
-
 ## 📦 What's Included
 
 ### RTL + Interface
@@ -150,6 +142,16 @@ To compile and run this testbench, follow the **general simulation setup** provi
 
 ### UVM Testbench 
 - `tb.sv`
+
+---
+
+## 🔧 **Running the Testbench**  
+
+To compile and run this testbench, follow the **general simulation setup** provided in the **[UVM README](../README.md)**.  
+
+🔗 **UVM Repository Simulation Guide**: [Click here](../README.md)  
+
+---
 
 ## 🤝 Contributing
 
