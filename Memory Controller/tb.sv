@@ -475,7 +475,7 @@ class cfg_wr extends uvm_sequence;
     uvm_status_e   status;
     bit [31:0] wdata; 
     
-    //////working with control 
+    //////working with cfg 
     for(int i = 0; i < 5 ; i++) begin
       wdata = $urandom_range(0,4095);
        regmodel.cfg_reg_inst.write(status, wdata);
@@ -504,7 +504,7 @@ endclass
     uvm_status_e   status;
     bit [31:0] rdata;
     
-    //////working with control 
+    //////working with cfg 
     for(int i = 0; i < 5 ; i++) begin
      regmodel.cfg_reg_inst.read(status, rdata); 
     end
@@ -530,7 +530,7 @@ endclass
     uvm_status_e   status;
     bit [31:0] rdata;
     
-    //////working with control 
+    //////working with status 
     for(int i = 0; i < 5 ; i++) begin
      regmodel.status_reg_inst.read(status, rdata); 
     end
@@ -556,7 +556,7 @@ endclass
     uvm_status_e   status;
     bit [31:0] rdata;
     
-    //////working with control 
+    //////working with error 
     for(int i = 0; i < 5 ; i++) begin
      regmodel.error_reg_inst.read(status, rdata); 
     end
