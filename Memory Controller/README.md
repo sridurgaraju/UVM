@@ -1,7 +1,5 @@
 # 🧠 Memory Controller with CSR Interface
 
-## 🛠 What is this?
-
 This project implements a **Memory Controller** hardware module in SystemVerilog along with a **UVM-based testbench** that uses **RAL (Register Abstraction Layer)** to access and verify register behavior.
 
 The controller provides a **CSR (Control and Status Register)** interface to manage memory operations (like reads/writes).
