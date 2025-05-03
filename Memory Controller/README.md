@@ -153,6 +153,9 @@ Each register was monitored using a UVM register model with appropriate covergro
 ### UVM Testbench 
 - `tb.sv`
 
+### UVM Testbench + Coverage 
+- `testbench.sv`
+
 ---
 
 ## 🔧 **Running the Testbench**  
