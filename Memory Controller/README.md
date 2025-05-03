@@ -6,8 +6,6 @@ The controller provides a **CSR (Control and Status Register)** interface to man
 
 Rather than interacting directly with the memory, users set values in registers — and the controller uses those values to perform operations.
 
-> 🔧 **Note:** This project is currently a work in progress. I'm in the process of developing the coverage part of the testbench
-
 ---
 
 ## 🧩 Interface Overview
@@ -121,7 +119,6 @@ This project uses a **UVM Register Abstraction Layer (RAL)** model to streamline
 
 - **Coverage Collection:**
   - Collects functional coverage for stimulus and register access.
-  - Currently under development.
 
 - **Test and Environment Structure:**
   - Modular `env`, `test`, and config-driven architecture.
@@ -129,7 +126,22 @@ This project uses a **UVM Register Abstraction Layer (RAL)** model to streamline
 
 These features together ensure maintainability, reusability, and thorough verification of the memory controller.
 
-> 🔧 *Currently working on the coverage part of the testbench to ensure functional and register-level coverage is met.*
+---
+
+## Coverage Analysis
+
+Detailed functional coverage results are provided in the [`cov.txt`](./cov.txt) file located in this repository.
+
+The coverage analysis includes:
+
+- Register-level coverage for:
+  - `mem_cntrl_reg`
+  - `mem_cfg_reg`
+  - `mem_status_reg`
+  - `mem_error_reg`
+- Address coverage using `csr_addr` to track the exercised register addresses during simulation.
+
+Each register was monitored using a UVM register model with appropriate covergroups defined for its fields. The address coverage ensures that all relevant CSR addresses were accessed as expected. The report captures bin hits, functional scenarios, and helps identify any untested conditions.
 
 ---
 
