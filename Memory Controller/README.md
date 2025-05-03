@@ -73,7 +73,7 @@ Invalid addresses return a default value: `0x00000000`.
 
 ### 4. `mem_error_reg` (0x0C)
 - **Bit [0]** → `error_flag`  
-  Set to 1 if an error occurs during operation.
+  Set to 1 if an error occurs during operation - when both the `csr_wr_en` and `csr_rd_en` are enabled at the same time.
 
 ### 5. `mem_id_reg` (0x10)
 - Hardcoded to `0x1234ABCD` to identify the memory controller.
