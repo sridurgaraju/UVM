@@ -1,12 +1,12 @@
-# 🔍 SPI Protocol Verification using UVM  
+# SPI Protocol Verification using UVM  
 
 This project implements a **Universal Verification Methodology (UVM)** testbench to verify a **Serial Peripheral Interface (SPI) design**. The verification environment ensures the SPI Master can correctly send and receive data using **constrained-random stimulus, functional coverage, and self-checking mechanisms**.  
 
 ---
 
-## 📌 **Project Overview**  
+## **Project Overview**  
 
-### 🔹 **SPI Design**  
+### **SPI Design**  
 
 The **SPI Master (`spi_intf.sv`)** controls SPI communication by:  
 ✔ Receiving **write (`wr`) and read** commands from the processor.  
@@ -22,7 +22,7 @@ The **Top Module (`top.sv`)** connects the **SPI Master** to **SPI Memory** for 
 
 ---
 
-### 🔹 **UVM Testbench**  
+### **UVM Testbench**  
 
 The UVM testbench is designed to **verify the SPI Master using a self-checking environment**. It consists of:  
 
@@ -49,17 +49,17 @@ The UVM testbench is designed to **verify the SPI Master using a self-checking e
 
 ---
 
-## 🔧 **Running the Testbench**  
+## **Running the Testbench**  
 
 To compile and run this testbench, follow the **general simulation setup** provided in the **[UVM README](../README.md)**.  
 
-🔗 **UVM Repository Simulation Guide**: [Click here](../README.md)  
+**UVM Repository Simulation Guide**: [Click here](../README.md)  
 
 This project is structured to work seamlessly within the **UVM environment**, so refer to the **main UVM repository documentation** for simulator-specific commands and setup instructions.  
 
 ---
 
-## 📊 **Key UVM Features Used**  
+## **Key UVM Features Used**  
 
 ✔ **UVM Agent** – Includes **Driver, Monitor, and Sequencer** to generate SPI transactions.  
 ✔ **UVM Scoreboard** – Compares expected vs. actual data to check correctness.  
@@ -68,7 +68,7 @@ This project is structured to work seamlessly within the **UVM environment**, so
 
 ---
 
-## 📌 Future Enhancements  
+## Future Enhancements  
 
 ✔ Add support for **SPI Slave** verification.  
 ✔ Extend testbench to include **error injection and recovery scenarios**.  
@@ -76,11 +76,11 @@ This project is structured to work seamlessly within the **UVM environment**, so
 
 ---
 
-### 📬 Contact  
-📧 Email: sridurgaraju07@gmail.com
-🔗 LinkedIn: https://www.linkedin.com/in/sri-durga-raju/ 
+### Contact  
+Email: sridurgaraju07@gmail.com
+LinkedIn: https://www.linkedin.com/in/sri-durga-raju/ 
 
 ---
 
-Happy Verifying! 🚀🔬  
+Happy Verifying! 
 
