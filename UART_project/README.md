@@ -10,15 +10,15 @@ This project implements a **Universal Verification Methodology (UVM)** testbench
 
 The **UART Top Module (`uart_top.sv`)** integrates the following components:  
 
-✔ **Clock Generator (`clk_gen.sv`)**  
+- **Clock Generator (`clk_gen.sv`)**  
    - Generates UART clock signals (`tx_clk` & `rx_clk`) based on configurable **baud rates** (4800, 9600, 115200, etc.).  
 
-✔ **UART Transmitter (`uart_tx.sv`)**  
+- **UART Transmitter (`uart_tx.sv`)**  
    - Sends serial data based on **start bits, data length, parity, and stop bits**.  
    - Supports **odd/even parity** and **1 or 2 stop bits**.  
    - Signals **tx_done** when transmission is complete.  
 
-✔ **UART Receiver (`uart_rx.sv`)**  
+- **UART Receiver (`uart_rx.sv`)**  
    - Receives serial data, extracts the bits, and reconstructs the **original message**.  
    - Checks **start/stop bits, parity**, and reports **rx_error** if mismatches occur.  
    - Signals **rx_done** when reception is complete.  
@@ -31,7 +31,7 @@ The **Top Module (`uart_top.sv`)** connects the **TX & RX modules**, allowing fu
 
 The UVM testbench verifies the UART TX & RX communication using a **self-checking environment**. It consists of:  
 
-✔ **Testbench (`uart_tb.v`)**  
+- **Testbench (`uart_tb.v`)**  
    - The **top-level testbench** responsible for:  
      - Instantiating the **UART interface (`uart_if`)** and connecting it to the UVM testbench components.  
      - Setting up the **DUT (`uart_top.sv`)**, including the transmitter, receiver, and clock generator.  
@@ -39,20 +39,20 @@ The UVM testbench verifies the UART TX & RX communication using a **self-checkin
      - Handling **UVM reports, assertions, and test completion status**.  
      - Ensuring **data integrity between TX and RX** by checking that transmitted data matches received data.  
 
-✔ **UVM Agent**  
+- **UVM Agent**  
    - Includes the **Driver, Monitor, and Sequencer** to generate UART transactions.  
    - The **Driver** sends stimulus to the UART transmitter.  
    - The **Monitor** collects transaction data for analysis.  
 
-✔ **UVM Scoreboard**  
+- **UVM Scoreboard**  
    - Compares **expected vs. actual** UART transactions.  
    - Detects errors in data transmission (mismatched baud rate, parity, stop bits, etc.).  
 
-✔ **UVM Environment**  
+- **UVM Environment**  
    - Instantiates **UVM Agent, Scoreboard, and Testbench Components**.  
    - Provides a scalable setup for **UART protocol verification**.  
 
-✔ **Test Sequences**  
+- **Test Sequences**  
    - Defines **stimulus** to verify different UART configurations (baud rate, parity, stop bits).  
    - Uses **constrained-random verification** to test multiple scenarios.  
 
@@ -70,17 +70,17 @@ This project is structured to work seamlessly within the **UVM environment**, so
 
 ## **Key UVM Features Used**  
 
-✔ **UVM Agent** – Includes **Driver, Monitor, and Sequencer** to generate UART transactions.  
-✔ **UVM Scoreboard** – Compares expected vs. actual data to check correctness.  
-✔ **UVM Coverage** – Measures functional coverage for UART communication scenarios.  
-✔ **Randomization** – Tests multiple UART configurations dynamically.  
+- **UVM Agent** – Includes **Driver, Monitor, and Sequencer** to generate UART transactions.  
+- **UVM Scoreboard** – Compares expected vs. actual data to check correctness.  
+- **UVM Coverage** – Measures functional coverage for UART communication scenarios.  
+- **Randomization** – Tests multiple UART configurations dynamically.  
 
 ---
 
 ## Future Enhancements  
 
-✔ Extend the testbench to support **full-duplex communication** (simultaneous TX & RX).  
-✔ Improve **functional coverage metrics** for different configurations.  
+- Extend the testbench to support **full-duplex communication** (simultaneous TX & RX).  
+- Improve **functional coverage metrics** for different configurations.  
 
 ---
 
