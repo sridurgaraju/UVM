@@ -1,12 +1,12 @@
-# 🔍 UART Protocol Verification using UVM  
+# UART Protocol Verification using UVM  
 
 This project implements a **Universal Verification Methodology (UVM)** testbench to verify a **Universal Asynchronous Receiver-Transmitter (UART) design**. The testbench ensures that the UART **transmitter (TX) and receiver (RX)** function correctly by simulating **various baud rates, data lengths, parity modes, and stop bits**, using **constrained-random stimulus, functional coverage, and self-checking mechanisms**.  
 
 ---
 
-## 📌 **Project Overview**  
+## **Project Overview**  
 
-### 🔹**UART Design**  
+### **UART Design**  
 
 The **UART Top Module (`uart_top.sv`)** integrates the following components:  
 
@@ -27,7 +27,7 @@ The **Top Module (`uart_top.sv`)** connects the **TX & RX modules**, allowing fu
 
 ---
 
-### 🔹 **UVM Testbench**  
+### **UVM Testbench**  
 
 The UVM testbench verifies the UART TX & RX communication using a **self-checking environment**. It consists of:  
 
@@ -58,17 +58,17 @@ The UVM testbench verifies the UART TX & RX communication using a **self-checkin
 
 ---
 
-## 🔧 **Running the Testbench**  
+## **Running the Testbench**  
 
 To compile and run this testbench, follow the **general simulation setup** provided in the **[UVM README](../README.md)**.  
 
-🔗 **UVM Repository Simulation Guide**: [Click here](../README.md)  
+**UVM Repository Simulation Guide**: [Click here](../README.md)  
 
 This project is structured to work seamlessly within the **UVM environment**, so refer to the **main UVM repository documentation** for simulator-specific commands and setup instructions.  
 
 ---
 
-## 📊 **Key UVM Features Used**  
+## **Key UVM Features Used**  
 
 ✔ **UVM Agent** – Includes **Driver, Monitor, and Sequencer** to generate UART transactions.  
 ✔ **UVM Scoreboard** – Compares expected vs. actual data to check correctness.  
@@ -77,16 +77,16 @@ This project is structured to work seamlessly within the **UVM environment**, so
 
 ---
 
-## 📌 Future Enhancements  
+## Future Enhancements  
 
 ✔ Extend the testbench to support **full-duplex communication** (simultaneous TX & RX).  
 ✔ Improve **functional coverage metrics** for different configurations.  
 
 ---
 
-### 📬 Contact  
-📧 Email: sridurgaraju07@gmail.com
-🔗 LinkedIn: https://www.linkedin.com/in/sri-durga-raju/ 
+### Contact  
+Email: sridurgaraju07@gmail.com
+LinkedIn: https://www.linkedin.com/in/sri-durga-raju/ 
 
 ---
 
