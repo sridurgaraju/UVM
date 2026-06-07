@@ -1,4 +1,4 @@
-# 🧠 Memory Controller with CSR Interface
+# Memory Controller with CSR Interface
 
 This project implements a **Memory Controller** hardware module in SystemVerilog along with a **UVM-based testbench** that uses **RAL (Register Abstraction Layer)** to access and verify register behavior.
 
@@ -8,7 +8,7 @@ Rather than interacting directly with the memory, users set values in registers 
 
 ---
 
-## 🧩 Interface Overview
+## Interface Overview
 
 Communication with the memory controller is done using a **CSR interface**:
 
@@ -20,7 +20,7 @@ Communication with the memory controller is done using a **CSR interface**:
 
 ---
 
-## 🗂 Register Map
+## Register Map
 
 | Register Name   | Address | Purpose                               | Access     |
 |-----------------|---------|----------------------------------------|------------|
@@ -32,9 +32,9 @@ Communication with the memory controller is done using a **CSR interface**:
 
 ---
 
-## 🛠 How Does It Work?
+## How Does It Work?
 
-### ✅ Writing to a Register
+### Writing to a Register
 
 To perform a write:
 - Set `csr_wr_en = 1`
@@ -44,7 +44,7 @@ To perform a write:
 Only writable registers will accept writes.  
 Writing to read-only registers is ignored.
 
-### 🔎 Reading a Register
+### Reading a Register
 
 To read from a register:
 - Set `csr_rd_en = 1`
@@ -55,7 +55,7 @@ Invalid addresses return a default value: `0x00000000`.
 
 ---
 
-## 🧮 Register Bit Descriptions
+## Register Bit Descriptions
 
 ### 1. `mem_ctrl_reg` (0x00)
 - **Bit [0]** → `start` bit: starts memory operation when set to `1`
@@ -78,7 +78,7 @@ Invalid addresses return a default value: `0x00000000`.
 
 ---
 
-## 🎯 Output Signal Mapping
+## Output Signal Mapping
 
 | Output Signal      | Source Field          | Description                          |
 |--------------------|------------------------|--------------------------------------|
@@ -90,11 +90,11 @@ Invalid addresses return a default value: `0x00000000`.
 
 ---
 
-## 🧪 UVM Testbench (RAL-Based)
+## UVM Testbench (RAL-Based)
 
 This project uses a **UVM Register Abstraction Layer (RAL)** model to streamline and abstract register-level operations in the testbench.
 
-### 🚀 UVM Features Used
+### UVM Features Used
 
 - **Register Abstraction Layer (RAL):**
   - Abstracts memory-mapped register accesses.
@@ -145,7 +145,7 @@ Each register was monitored using a UVM register model with appropriate covergro
 
 ---
 
-## 📦 What's Included
+## What's Included
 
 ### RTL + Interface
 - `memory_controller.sv`  
@@ -158,11 +158,11 @@ Each register was monitored using a UVM register model with appropriate covergro
 
 ---
 
-## 🔧 **Running the Testbench**  
+## **Running the Testbench**  
 
 To compile and run this testbench, follow the **general simulation setup** provided in the **[UVM README](../README.md)**.  
 
-🔗 **UVM Repository Simulation Guide**: [Click here](../README.md)  
+**UVM Repository Simulation Guide**: [Click here](../README.md)  
 
 ---
 
