@@ -83,19 +83,19 @@ For more detail, refer to [`cov.txt`](./cov.txt).
 
 ## Features Covered
 
-- ✅ **RV32I-compliant ALU operation modeling**  
+- **RV32I-compliant ALU operation modeling**  
   ALU design follows the RISC-V RV32I specification for integer operations.
 
-- ✅ **UVM-based self-checking testbench**  
+- **UVM-based self-checking testbench**  
   A modular UVM testbench architecture with driver, monitor, scoreboard, sequencer, and reusable test components.
 
-- ✅ **Functional and assertion-based verification**  
+- **Functional and assertion-based verification**  
   Assertions check correctness of zero flag and valid operation codes during runtime.
 
-- ✅ **Constrained-random test generation**  
+- **Constrained-random test generation**  
   Randomized operands and operations ensure wide input space coverage.
 
-- ✅ **Coverage-driven analysis**  
+- **Coverage-driven analysis**  
   Functional coverage is collected and summarized to assess verification completeness.
 
 ---
