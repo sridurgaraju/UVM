@@ -107,7 +107,7 @@ To compile and run this testbench, follow the **general simulation setup** provi
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to propose.
 
