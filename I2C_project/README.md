@@ -75,5 +75,5 @@ LinkedIn: https://www.linkedin.com/in/sri-durga-raju/
 
 ---
 
-Happy Verifying! 🚀🔬  
+Happy Verifying!  
 
