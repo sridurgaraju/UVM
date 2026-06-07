@@ -9,9 +9,9 @@ This project implements a **Universal Verification Methodology (UVM)** testbench
 ### **I2C Design**  
 
 The **I2C Memory (`i2c_mem.sv`)**:  
-✔ Implements a **128-byte memory** accessible via I2C transactions.  
-✔ Supports **read and write operations** using I2C standard signals (`SDA`, `SCL`).  
-✔ Uses a **state machine** to control data flow and acknowledge signals.  
+- Implements a **128-byte memory** accessible via I2C transactions.  
+- Supports **read and write operations** using I2C standard signals (`SDA`, `SCL`).  
+- Uses a **state machine** to control data flow and acknowledge signals.  
 
 ---
 
@@ -56,16 +56,16 @@ This project is structured to work seamlessly within the **UVM environment**, so
 
 ## **Key UVM Features Used**  
 
-✔ **UVM Agent** – Includes **Driver, Monitor, and Sequencer** to generate I2C transactions.  
-✔ **UVM Scoreboard** – Compares expected vs. actual data to check correctness.  
-✔ **Randomization** – Tests multiple I2C configurations dynamically.  
+- **UVM Agent** – Includes **Driver, Monitor, and Sequencer** to generate I2C transactions.  
+- **UVM Scoreboard** – Compares expected vs. actual data to check correctness.  
+- **Randomization** – Tests multiple I2C configurations dynamically.  
 
 ---
 
 ## Future Enhancements  
 
-✔ Add support for **multi-device I2C bus verification**.  
-✔ Implement **functional coverage-driven random testing**.  
+- Add support for **multi-device I2C bus verification**.  
+- Implement **functional coverage-driven random testing**.  
 
 ---
 
