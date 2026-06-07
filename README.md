@@ -31,7 +31,7 @@ To run any project, follow these steps:
 
 ## Contact
 For questions, reach out via:
-📧 Email: sridurgaraju07@gmail.com
-🔗 LinkedIn: https://www.linkedin.com/in/sri-durga-raju/
+Email: sridurgaraju07@gmail.com
+LinkedIn: https://www.linkedin.com/in/sri-durga-raju/
 
-Happy verifying! 🧪🚀
+Happy verifying!
