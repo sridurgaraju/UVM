@@ -9,14 +9,14 @@ This project implements a **Universal Verification Methodology (UVM)** testbench
 ### **SPI Design**  
 
 The **SPI Master (`spi_intf.sv`)** controls SPI communication by:  
-✔ Receiving **write (`wr`) and read** commands from the processor.  
-✔ Sending/receiving **8-bit data (`din/dout`)** through MOSI/MISO lines.  
-✔ Using a **state machine** to handle SPI transactions (idle, load, send, read).  
-✔ Generating **chip select (`cs`) signals** for proper SPI communication.  
+- Receiving **write (`wr`) and read** commands from the processor.  
+- Sending/receiving **8-bit data (`din/dout`)** through MOSI/MISO lines.  
+- Using a **state machine** to handle SPI transactions (idle, load, send, read).  
+- Generating **chip select (`cs`) signals** for proper SPI communication.  
 
 The **SPI Memory (`spi_mem.sv`)** stores and retrieves data based on SPI transactions.  
-✔ Writes data to memory when SPI Master sends a write request.  
-✔ Reads data from memory and sends it to the SPI Master when requested.  
+- Writes data to memory when SPI Master sends a write request.  
+- Reads data from memory and sends it to the SPI Master when requested.  
 
 The **Top Module (`top.sv`)** connects the **SPI Master** to **SPI Memory** for full verification.  
 
@@ -26,25 +26,25 @@ The **Top Module (`top.sv`)** connects the **SPI Master** to **SPI Memory** for 
 
 The UVM testbench is designed to **verify the SPI Master using a self-checking environment**. It consists of:  
 
-✔ **Testbench (`tb.sv`)**  
+- **Testbench (`tb.sv`)**  
    - Instantiates the **SPI interface and test environment**.  
    - Calls the **test sequences** to run different verification scenarios.  
    - Reports test results and coverage metrics.  
 
-✔ **UVM Agent**  
+- **UVM Agent**  
    - Includes the **Driver, Monitor, and Sequencer** to generate SPI transactions.  
    - The **Driver** sends stimulus to the SPI Master.  
    - The **Monitor** collects transaction data for analysis.  
 
-✔ **UVM Scoreboard**  
+- **UVM Scoreboard**  
    - Compares **expected vs. actual** SPI transactions.  
    - Detects errors in data transmission.  
 
-✔ **UVM Environment**  
+- **UVM Environment**  
    - Instantiates **UVM Agent, Scoreboard, and Testbench Components**.  
    - Provides a scalable setup for **SPI protocol verification**.  
 
-✔ **Test Sequences**  
+- **Test Sequences**  
    - Defines **stimulus** to verify different SPI operations (write, read, error handling).  
 
 ---
@@ -61,18 +61,18 @@ This project is structured to work seamlessly within the **UVM environment**, so
 
 ## **Key UVM Features Used**  
 
-✔ **UVM Agent** – Includes **Driver, Monitor, and Sequencer** to generate SPI transactions.  
-✔ **UVM Scoreboard** – Compares expected vs. actual data to check correctness.  
-✔ **UVM Coverage** – Measures functional coverage for SPI transactions.  
-✔ **Randomization** – Tests multiple SPI configurations dynamically.  
+- **UVM Agent** – Includes **Driver, Monitor, and Sequencer** to generate SPI transactions.
+- **UVM Scoreboard** – Compares expected vs. actual data to check correctness.  
+- **UVM Coverage** – Measures functional coverage for SPI transactions.  
+- **Randomization** – Tests multiple SPI configurations dynamically.  
 
 ---
 
 ## Future Enhancements  
 
-✔ Add support for **SPI Slave** verification.  
-✔ Extend testbench to include **error injection and recovery scenarios**.  
-✔ Integrate formal verification for protocol compliance.  
+- Add support for **SPI Slave** verification.  
+- Extend testbench to include **error injection and recovery scenarios**.  
+= Integrate formal verification for protocol compliance.  
 
 ---
 
