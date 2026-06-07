@@ -1,6 +1,6 @@
 # ALU Design and UVM-Based Verification (Based on RISC-V RV32I)
 
-## 📌 Overview
+## Overview
 
 This project implements and verifies a 32-bit Arithmetic Logic Unit (ALU) using **SystemVerilog** and **Universal Verification Methodology (UVM)**. The ALU is based on the **RV32I** base integer instruction set of the **RISC-V processor architecture**.
 
@@ -12,7 +12,7 @@ The UVM-based testbench includes:
 
 ---
 
-## ⚙️ RISC-V RV32I Compliance
+## RISC-V RV32I Compliance
 
 The ALU design follows the operation semantics defined in the **RV32I** instruction set of the RISC-V architecture. Supported operations include:
 
@@ -25,7 +25,7 @@ This makes the ALU suitable for integration into a RISC-V-based CPU pipeline or 
 
 ---
 
-## 🧠 ALU Operations Supported
+## ALU Operations Supported
 
 | ALU Control | Operation | Description |
 |-------------|-----------|-------------|
@@ -42,11 +42,11 @@ This makes the ALU suitable for integration into a RISC-V-based CPU pipeline or 
 
 ---
 
-## 🧪 UVM Testbench Architecture
+## UVM Testbench Architecture
 
 This project uses a **Universal Verification Methodology (UVM)** testbench with modular components that verify ALU functionality through dynamic and reusable verification strategies.
 
-### 🚀 UVM Components Used
+### UVM Components Used
 
 - **Transaction (sequence item)**: Encapsulates operand_a, operand_b, alu_control, result, zero_flag.
 - **Sequence**: Generates randomized operations across the RV32I ALU control space.
@@ -58,17 +58,17 @@ This project uses a **Universal Verification Methodology (UVM)** testbench with 
 
 ---
 
-## 📈 Included Output Files
+## Included Output Files
 
-- 📸 **Waveform Snapshot**:  
+- **Waveform Snapshot**:  
   The waveform output is saved as [`alu_output.png`](./alu_output.png), showing simulation signals including operands, control signals, result, and zero_flag.
 
-- 📊 **Coverage Report**:  
+- **Coverage Report**:  
   A full functional coverage log is included as [`cov.txt`](./cov.txt), summarizing which ALU operations and operand ranges were exercised.
 
 ---
 
-## 📊 Coverage Highlights
+## Coverage Highlights
 
 The testbench collects coverage for:
 
@@ -81,7 +81,7 @@ For more detail, refer to [`cov.txt`](./cov.txt).
 
 ---
 
-## ✔️ Features Covered
+## Features Covered
 
 - ✅ **RV32I-compliant ALU operation modeling**  
   ALU design follows the RISC-V RV32I specification for integer operations.
@@ -100,11 +100,10 @@ For more detail, refer to [`cov.txt`](./cov.txt).
 
 ---
 
-## 🔧 **Running the Testbench**  
+## **Running the Testbench**  
 
 To compile and run this testbench, follow the **general simulation setup** provided in the **[UVM README](../README.md)**.  
-
-🔗 **UVM Repository Simulation Guide**: [Click here](../README.md)  
+**UVM Repository Simulation Guide**: [Click here](../README.md)  
 
 ---
 
