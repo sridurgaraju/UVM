@@ -2,11 +2,11 @@
 
 This repository contains a simplified implementation of the **ARM AMBA Coherent Hub Interface (CHI)** protocol using SystemVerilog.
 
-> 🔧 **Note:** This project is currently a work in progress. I'm in the process of building out a full verification environment using UVM and functional coverage.
+> **Note:** This project is currently a work in progress. I'm in the process of building out a full verification environment using UVM and functional coverage.
 
 ---
 
-## ✅ Current Status
+## Current Status
 
 - Implemented basic CHI modules: **Request Node (RN)**, **Home Node (HN)**, and **Slave Node (SN)**
 - Developed a **basic SystemVerilog testbench** (`CHI_tb.sv`) to validate:
@@ -18,7 +18,7 @@ This repository contains a simplified implementation of the **ARM AMBA Coherent 
 
 ---
 
-## 🚧 Upcoming Features
+## Upcoming Features
 
 - [ ] Full **UVM-based testbench** to test:
   - Coherent transactions between nodes
@@ -33,7 +33,7 @@ This repository contains a simplified implementation of the **ARM AMBA Coherent 
 
 ---
 
-## 🧪 Test Scenarios (Implemented)
+## Test Scenarios (Implemented)
 
 The following scenarios are covered in the basic testbench:
 
@@ -49,7 +49,7 @@ The following scenarios are covered in the basic testbench:
 
 ---
 
-## 📌 Requirements
+## Requirements
 
 - **Simulation Tools**:  
   - Xilinx Vivado  
@@ -61,13 +61,13 @@ The following scenarios are covered in the basic testbench:
 
 ---
 
-## 🔗 Future Improvements
+## Future Improvements
 
 If you’re interested in collaborating or have ideas on expanding this protocol implementation (e.g., adding AXI, trace-based testing, memory models), feel free to reach out or open an issue.
 
 ---
 
-## 🙌 Acknowledgements
+## Acknowledgements
 
 - **ARM AMBA CHI documentation** — for protocol specification and design reference  
 - **Open-source communities** — for educational resources on SoC design, cache coherence, and UVM verification methodologies
